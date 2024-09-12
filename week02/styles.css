@@ -1,0 +1,72 @@
+/*this is a tag selector*/
+
+body{
+	background-color: #95cfc9;
+	font-family:American Typewriter, serif;
+	font-size: 20px;
+	font-weight: 400;
+	color: #333;
+	text-align: center;
+} 
+
+/*this is a descendant selector*/
+
+header h1{
+	font-family:Didot, serif;
+	color:#31135e;
+	text-align: left;
+}
+header h2{
+	font-family:Didot, serif;
+	color:#31135e;
+	text-align: right;
+	font-size: 30px;
+}
+
+nav {
+	background-color: #f0edf5;
+	padding: 20px;
+	text-align: left;
+	border-block: 3px dotted purple;
+}
+
+nav a{
+	margin: 20px;
+	color:#8c67b5 ;
+	text-decoration: none;
+	font-family: Didot;
+	font-weight: 600;
+}
+
+nav a:hover{
+	color:#000;
+}
+
+main img.flower{
+	width: 300px;
+	border-block: 6px dotted mediumpurple;
+}
+
+main img.flower_2{
+	width: 300px;
+	border-block: 4px solid mediumpurple;
+}
+
+main a{
+	color: #6a45a3;
+	text-decoration: none;
+}
+
+main a:hover {
+	color: #000;
+}
+
+footer h1{
+	font-size: 15px;
+	text-align: right;
+}
+
+footer h2{
+	font-size: 13px;
+	text-align: right;
+}
