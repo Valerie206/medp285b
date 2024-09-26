@@ -1,0 +1,152 @@
+body{
+	background-color: #EEE;
+	margin: 0px;
+	padding: 0px;
+	font-family: Franklin Gothic, Century Old Style, sans-serif;
+	background-image: url("images/ny_times02.jpg");
+	background-position: center;
+  background-attachment: fixed;
+}
+
+header, nav, main, footer{
+/*example of grouping*/
+	padding: 22px;
+}
+
+header h1{ 
+text-align: center;
+ }
+
+h1, h2, h3, h4, h5 {
+/*GROUPING EXAMPLES FOR BULK EDITING	*/
+	margin: 0px;
+}
+
+#wrapper{
+
+	background-color: #FAF9F6;
+	width: 80%;
+	margin: 0px auto 0px auto;
+	border: solid 10px #000;
+		/*	style size color*/
+	padding: 0px;
+		/*inside of the box	*/
+
+}
+
+nav{
+	background-color: #000;
+	padding: 22px;
+		/*if you want the nav bar to reach the end you have to experiment with the padding. 
+		Remove padding from wrapper and put it on nav*/
+	text-align: center;
+	font-weight: 800;
+}
+
+nav a{
+	color: #FFF;
+	text-decoration: none;
+	margin: 0px 20px;
+		/*can be used to increase space between each link*/
+	background-color: #F00;
+	padding: 10px;
+		/*can be used to make things look like boarders*/
+	border: solid 4px #000;
+}
+
+nav a:hover{
+	background-color: #F00;
+	border:solid 6px #000;
+}
+
+main{ 
+padding: 22px;
+ }
+
+article.intro{
+	text-align: center;
+}
+main h1 a{
+	color: #F00;
+}
+
+
+article.intro img.introThumb{
+border: solid 3px #000;
+background-color: #FFF;
+padding: 10px;
+	/*only way to see background color on an image is to have padding*/
+box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.5);
+filter: grayscale(70%);
+	padding: inherit;
+  margin:auto;
+  width: 200px;
+  display: block;
+}
+
+article p{
+	text-align: center;
+}
+
+article.mayor img.mayorThumb{
+	border: solid 3px #000;
+background-color: #FFF;
+padding: 0px;
+box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.5);
+filter: grayscale(70%);
+margin: 0px;
+	width: 200px;
+}
+
+article.mayor p.mayorText{
+	text-align: left;
+}
+
+article.hurricane img.hurricaneThumb{
+	border: solid 3px #000;
+background-color: #FFF;
+padding: 0px;
+box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.5);
+filter: grayscale(70%);
+margin: 0px;
+	width: 300px;
+}
+article.hurricane{
+	text-align: right;
+}
+article.hurricane p.hurricaneText{
+	text-align: right;
+}
+
+article.election img.electionThumb{
+	border: solid 3px #000;
+background-color: #FFF;
+padding: 0px;
+box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.5);
+filter: grayscale(70%);
+margin: 0px;
+	width: 300px;
+}
+article.election{
+	text-align: left;
+
+}
+article.election p.electionText{
+	text-align: left;
+
+}
+article.cuts{
+	text-align: center;
+}
+article.cuts img.cutsThumb{
+border: solid 3px #000;
+background-color: #FFF;
+padding: 10px;
+	/*only way to see background color on an image is to have padding*/
+box-shadow: 4px 4px 2px 0 rgba(0,0,0,0.5);
+filter: grayscale(70%);
+	padding: inherit;
+  margin:auto;
+  width: 200px;
+  display: block;
+}
