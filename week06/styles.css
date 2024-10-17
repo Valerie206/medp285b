@@ -1,0 +1,369 @@
+
+body{
+	background-color:#1587ea;
+	margin: 0px;
+	padding: 0px;
+	height:2000px;
+	overflow: hidden;
+	font-family:"Agdasima", sans-serif ;
+	font-size: 20px;
+	font-weight: 700;
+  font-style: normal;
+	background-image: url("");
+	background-position: ;
+  background-attachment: ;
+}
+
+div.container{
+border: 5px solid;
+border-color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 999;	
+  position: absolute;
+}
+
+nav{
+	text-align: center;
+}
+
+nav a{
+	text-decoration: none;
+	color: #231942;
+}
+
+nav a:hover{
+	background-color: #64a6bd;
+	border:double 3px #fff;
+}
+
+div.square {
+  height: 50px;
+  width: 50px;
+  background-color: #ffafcc;
+  transform: rotate(50deg);
+  display: inline-block;
+  padding: 40px;
+  position: relative;
+}
+
+div.perimeter {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 41;
+}
+
+div.rectangle1 {
+	height: 200px;
+	width: 500px;
+	background-color: #231942;
+	border: 2px solid #000;
+	z-index: 40;
+}
+
+div.perimeter2{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 39;
+}
+
+div.rectangle2 {
+	height: 270px;
+	width: 570px;
+	background-color: #5e548e;
+	border: 5px solid;
+	z-index: 38;
+}
+
+div.perimeter3{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 37;
+}
+
+div.rectangle3 {
+	height: 340px;
+	width: 640px;
+	background-color: #9f86c0;
+	border: 5px solid;
+	z-index: 36;
+}
+
+div.perimeter4{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index:35;
+}
+
+div.rectangle4 {
+	height: 410px;
+	width: 710px;
+	background-color: #be95c4;
+	border: 5px solid;
+	z-index: 34;
+}
+
+div.perimeter5{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 33;
+}
+
+div.rectangle5 {
+	height: 480px;
+	width: 780px;
+	background-color: #e0b1cb;
+	border: 5px solid;
+	z-index: 32;
+}
+div.perimeter6{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 31;
+}
+
+div.rectangle6 {
+	height: 550px;
+	width: 850px;
+	background-color: #231942;
+	border: 5px solid;
+	z-index: 30;
+}
+div.perimeter7{
+	 position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px;
+  z-index: 29;
+}
+
+div.rectangle7 {
+	height: 630px;
+	width: 930px;
+	background-color: transparent;
+	border: 5px solid #fff;
+	z-index: 28;
+}
+
+.circle {
+  height: 500px;
+  width: 700px;
+  background-color: #cdb4db;
+  border-radius: 50%;
+  position: ;
+  top: 0px;
+  left:0px;
+}
+
+.circle2 {
+  height: 500px;
+  width: 700px;
+  background-color: #a2d2ff;
+  border-radius: 50%;
+  position: fixed;
+    bottom: 0;
+    right: 0;
+  opacity: 0.7;
+  z-index: 45;
+}
+
+div.buttonAbsolute{
+	background-color:#ff0e0e;
+		position: absolute;
+	top: 0px;
+	right: 170px;
+	padding: 20px;
+	border-radius: 125px;
+	border: 5px solid #47f229;
+	z-index: 5;
+	opacity: 0.8;
+	width: 50px;
+	height: 50px;
+}
+
+div.buttonAbsolute2{
+	background-color:#3cff00;
+	position: absolute;
+	top: 0px;
+	right:260px;
+	border-radius: 200px;
+	border: 8px double #f22947;
+	padding: 20px;
+	z-index: 3;
+	width: 100px;
+	height: 100px;
+}
+
+div.buttonAbsolute3{
+	background-color:#00d2ff;
+		position: absolute;
+	top: 30px;
+	right: 100px;
+	padding: 20px;
+	border-radius: 500px;
+	border: 5px dashed #f2d429;
+	z-index: 4;
+	opacity:0.9 ;
+	width: 200px;
+	height: 200px;
+}
+
+div.buttonAbsolute4{
+	background-color:#fff400;
+		position: absolute;
+	top: 150px;
+	right: 300px;
+	padding: 20px;
+	border-radius: 300px;
+	border: 7px solid #6f00ff;
+	z-index: 5;
+	opacity: 0.7;
+	width: 300px;
+	height: 300px;
+}
+
+div.buttonAbsolute5{
+	background-color:#ff00c1;
+	position: absolute;
+	top: 350px;
+	right:500px;
+	border-radius: 200px;
+	border: 3px dotted #f0ff00;
+	padding: 20px;
+	z-index: 3;
+	width: 200px;
+	height: 200px;
+}
+
+div.buttonAbsolute6{
+	background-color:#6f00ff;
+		position: absolute;
+	top: 400px;
+	left: 400px;
+	padding: 20px;
+	border-radius: 500px;
+	z-index: 4;
+	opacity:0.7 ;
+	width: 400px;
+	height: 400px;
+}
+
+div.buttonAbsolute7{
+	background-color:#2947f2;
+		position: absolute;
+	top: 50px;
+	left: 350px;
+	padding: 20px;
+	border-radius: 500px;
+	border: 10px double #ff00c1;
+	z-index: 4;
+	opacity:0.9 ;
+	width: 350px;
+	height: 350px;
+}
+
+div.buttonAbsolute8{
+	background-color:#f22947;
+		position: absolute;
+	top: 400px;
+	right: 260px;
+	padding: 20px;
+	border-radius: 500px;
+	border: 3px groove #00d2ff;
+	z-index: 10;
+	opacity:0.9 ;
+	width: 250px;
+	height: 250px;
+}
+
+div.b{
+	background-color: #1587ea;
+	width: 50%;
+	margin: 0px auto 0px auto;
+	border: solid 10px #03045e;
+		/*	style size color*/
+	padding: 0px;
+		/*inside of the box	*/
+
+}
+
+div.oval{
+	height: 50px;
+  width: 100px;
+  background-color: #ffba08;
+  border-radius: 50%;
+  border: 4px double #9d0208;
+
+}
+
+.line {
+    position: absolute;
+    left: 0;
+    width: 150vw;
+    height: 5px;
+    background-color: #fdc500;
+    transform: rotate(45deg);
+    transform-origin: top left;
+    top: var(--top-offset); /* Use custom property for vertical offset */
+    z-index: 8;
+}
+
+div.c{
+	display: flex;
+	justify-content: center; /* Center horizontally */
+	align-items: center;     /* Center vertically */
+	height: 100vh;           /* Full viewport height */
+	background-color: #03045e;
+	border: 5px solid #fdc500;
+}
+div.parallelogram {
+	width: 200px;
+	height: 150px;
+	transform: skew(-20deg);
+	background: #fdc500;
+	border: 7px solid #000;
+	box-shadow: -30px -50px #03071e;
+	z-index: 9;
+}
+div.parallelogram2{
+	width: 200px;
+	height: 150px;
+	transform: skew(40deg);
+	background: #03071e;
+	box-shadow: 25px 25px #fdc500;
+ 	z-index: 10;
+}
+
+div.parallelogram3{
+width: 200px;
+	height: 150px;
+	transform: skew(-20deg);
+	background: #fdc500;
+	border: 5px solid #000;
+	box-shadow: 20px 50px #03071e;
+  z-index: 10;
+}
+
+
