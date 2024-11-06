@@ -1,0 +1,474 @@
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+ 
+#wrapper{
+  padding: 0;
+  margin: 0;
+  display: flex;
+/*set max width of.container but display body as flex and center it's contents*/
+justify-content: center;
+font-family:"Orbitron", sans-serif ;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  color:#7DF9FF ;
+  background-color: #1a1a1a;
+  background-image: url(images/background3.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-attachment:fixed ;
+    animation: fadeIn 1.5s ease-out;
+}
+
+h1, h2, h3, h4, h5{
+  text-transform: uppercase;
+}
+
+.container > * {
+  padding: 20px;
+}
+
+div.container{
+ display: flex; /*use flex box*/
+ flex-wrap: wrap; /*allows wrapping of flex items*/
+ max-width: 1000px;
+ margin: 0 auto;
+}
+
+/*FLEX ITEMS*/
+.container header{
+  background-color:#495057 ;
+  border: solid 2px #00f9ff ;
+  flex: 1 0 100%; /*grow on, shrink off, basis width of browser */
+  order: 1;  
+/*display order regardless of html strucutre  */
+}
+
+ @keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.container main{
+  background-color: #343a40;
+  border: solid 0px #00f9ff ;
+  flex: 1 1 500px; /* allow to grow and shrink with remaining space of total 900px, 
+                    when container is larger than 900, extra space is distributed evenly, 
+                    when smaller, items will wrap to next line in order to maintain the basis */
+  order:3 ;
+  
+}
+
+ .container nav{
+  background-color: #6c757d;
+  border: solid 2px #00f9ff ;
+  flex: 1 0 200px; /*grow but do not shrink less than basis  */
+  order: 2;
+  
+}
+
+ .container nav a{
+  text-decoration: none;
+  color: #00f9ff;
+}
+
+ @keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+  transform: scale(1);
+  }
+}
+
+ button {
+   background: #708090;
+    padding: 0.75em 1.5em;
+    border: 3px solid #00f9ff;
+    color: #00f9ff;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: 400;
+    border-radius: 15px;
+    cursor: pointer;
+    margin: auto;
+    position: relative;
+    display: grid;
+    place-items: center;
+        text-shadow: 0 0 5px #fff;
+    box-shadow:
+        0 0 10px #00f9ff;
+  animation: pulse 2s infinite;
+        }
+
+.container aside{
+  background-color: #6c757d;
+  border: solid 2px #00f9ff ;
+  flex: 1 0 200px; /*grow but d not shrink less than basis  */
+  order: 4;
+}
+
+.container aside a{
+  text-decoration: none;
+  color: #00f9ff;
+}
+.container aside a:hover{
+  color: #39ff14;
+  animation: glow 1.5s infinite;
+  text-decoration: underline;
+}
+
+.container footer{
+  background-color: #495057;
+  border: solid 2px #00f9ff ;
+  flex: 1 0 100%; /*grow on, shrink off, basis width of browser */
+  order: 5;
+}
+
+#map, #impact{
+  font-family: 'Orbitron', sans-serif;
+  color: #00f9ff;
+  background-color: #343a40;
+  min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+  margin: 0;
+  padding: 0;
+   animation: fadeIn 1.5s ease-out;
+
+}
+
+header.two, header.three{
+ text-align: center;
+  background-color: #a8a9ad;
+  padding: 10px;
+  border-top: 2px solid #00f9ff;
+  background-image: url(images/background3.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-attachment:fixed ;
+    display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
+} 
+
+header.two p, header.three p {
+  font-size: 18px;
+
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  border-top: 2px solid #00f9ff;
+  margin-top: auto;
+}
+
+.box, .box2{
+   padding: 5px;
+  margin: 5px;
+  background-color: #000;
+  width: 40vw;
+  max-width: 800px;
+  border: 2px solid #00f9ff;
+}
+
+header.two h1, header.three h1 {
+  color: #fff ;
+  text-shadow: 2px 2px #00f9ff;
+}
+
+nav a {
+  color: #00f9ff;
+  text-decoration: none;
+  margin: 0 10px;
+  
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #39ff14;
+  animation: glow 1.5s infinite;
+}
+.map-container h4 {
+  text-align: center;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  max-width: 800px;
+  height: 400px;
+  margin: 20px auto;
+  background-image: url('images/map.jpg');
+  background-size: cover;
+  background-position: center;
+  transition: box-shadow 0.5s ease;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between; 
+}
+
+.text {
+  text-align: center; /* Center the footer text horizontally */
+  
+}
+
+.map-container:hover {
+  box-shadow: 0 0 15px 5px #00f9ff;
+}
+
+
+/* Data Center Pins */
+.data-center {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-color: #ff4500;
+  border: 2px solid #00f9ff;
+  border-radius: 50%;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+  animation: pulse 2s infinite;
+}
+
+.data-center:hover {
+  transform: scale(1.5);
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.data-center::after {
+  content: attr(data-info);
+  position: absolute;
+  bottom: 125%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 0.8em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.data-center:hover::after {
+  opacity: 1;
+}
+
+.data{
+  color: #fff;
+  padding: 20px;
+  font-weight: 200;
+  font-style: normal;
+  max-width: 900px;
+  margin: 15px auto;
+  text-align: center;
+}
+
+.data a, .energy-tracker a{
+  text-decoration: none;
+  color: #00f9ff;
+}
+
+main a{
+  text-decoration: none;
+  color: #fff;
+}
+
+.data a:hover, main a:hover, .energy-tracker a:hover{
+  color: #39ff14;
+}
+.energy-tracker, .four {
+  background-color: rgba(0, 0, 0, 0.8);
+  color: #fff;
+  background-image: url(images/background3.jpg);
+      background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    background-attachment:fixed ;
+     display: flex;
+  justify-content: center; 
+  align-items: center; 
+}
+
+.energy-tracker div, .four div{
+  padding: 5px;
+  margin: 5px;
+  background-color: #000;
+  width: 60vw;
+  max-width: 800px;
+  border: 2px solid #00f9ff;
+ }
+
+
+@keyframes glow {
+  0%, 100% {
+    text-shadow: 0 0 5px #00f9ff, 0 0 10px #00f9ff;
+  }
+  50% {
+    text-shadow: 0 0 10px #00f9ff, 0 0 20px #00f9ff;
+  }
+}
+
+
+header.three {
+  text-align: center;
+  background-color: #a8a9ad;
+  padding: 10px;
+  border-top: 2px solid #00f9ff;
+
+}
+
+header.three p {
+  font-size: 18px;
+}
+
+footer {
+  text-align: center;
+  background-color: #a8a9ad;
+  padding: 10px;
+  border-top: 2px solid #00f9ff;
+  margin-top: auto;
+ 
+}
+
+.intro {
+  color: #fff;
+  padding: 20px;
+  max-width: 800px;
+  margin: 20px auto;
+  text-align: center;
+ 
+}
+
+.intro h2{
+  color: #00f9ff;
+}
+
+.tips-cards, .resources-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  animation: fadeIn 1.5s ease-out;
+  
+}
+
+.tips-cards h3, .resources-cards h3 {
+  flex-basis: 100%;
+  text-align: center;
+  color: #00f9ff;
+  animation: fadeIn 2s ease-out;
+}
+
+.card:hover {
+  box-shadow: 0 0 15px 5px #00f9ff;
+}
+
+.card {
+  background: #495057;
+  border: 1px solid #00f9ff;
+  border-radius: 8px;
+  padding: 20px;
+  width: 320px;
+  text-align: justified;
+  transition: transform 0.3s ease;
+  opacity: 0;
+  animation: slideIn 1.2s ease forwards;
+  transition: box-shadow 0.5s ease;
+}
+
+.card:nth-child(1) {
+  animation-delay: 0.3s;
+}
+
+.card:nth-child(2) {
+  animation-delay: 0.6s;
+}
+
+.card:nth-child(3) {
+  animation-delay: 0.9s;
+}
+
+.card:nth-child(4) {
+  animation-delay: 1.2s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card h4 {
+  color: #7DF9FF;
+}
+
+.card p {
+  color: #b3b3b3;
+  font-weight: 300;
+}
+
+.card a {
+  color: #00f9ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.card a:hover {
+  color: #7DF9FF;
+}
+
+.resources-cards a:hover{
+  color: #39ff14;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
