@@ -1,0 +1,139 @@
+body {  
+  font-family: "Sour Gummy",helvetica, sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  font-variation-settings:
+    "wdth" 100;
+    background-color: #f7e5c8;
+    padding: 0px;
+}
+    
+h1 {
+    color: #773F1A;
+    text-align: center;
+   font-size: 2.5em;
+}
+
+#left-container {
+    left: 0px;
+}
+
+#right-container {
+    right: 0px;
+}
+
+.container {
+    background-color: #e0c2a2;
+    width: 15%;
+    top: 0px;
+    position: absolute;
+    height: 100%;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.cookie-holder {
+    position: relative;
+    height: 14%;
+    left: 10px;
+}
+
+.cookie {
+    position: absolute;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 2;
+
+}
+
+.jar-body {
+    height: 80%;
+    width: 60%;
+    background: #e0e0e0;
+    border-radius: 1rem;
+    position: absolute;
+    bottom: 0.5%;
+    left: 20%;
+    opacity: 0.7;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.jar-lid {
+    width: 50%;
+    height: 5%;
+    background: #202226;
+    position: absolute;
+    bottom: 80.5%;
+    left: 25%;
+    opacity: 0.7;
+    z-index: 1;
+}
+.jar-base {
+    width: 50%;
+    height: 1%;
+    background: #202226;
+    position: absolute;
+    bottom: 0%;
+    left: 25%;
+    opacity: 0.7;
+}
+
+.jar-glossy-long {
+    width: 3%;
+    height: 20%;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.5); 
+    position: absolute;
+    bottom: 20%;
+    left: 5%;
+}
+
+.jar-glossy-short {
+    width: 3%;
+    height: 5%;
+    border-radius: 2rem;
+    background: rgba(255, 255, 255, 0.5); 
+    position: absolute;
+    bottom: 45%;
+    left: 5%;
+}
+
+.cookie:hover {
+    animation: bounce 0.3s ease;
+}
+
+@keyframes bounce {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0); }
+}
+
+button {
+    display: block;
+    margin: 20px auto;
+    background-color: #e0c2a2;  
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #cfa48a; 
+}
+
+/* Message styles */
+#demo {
+    display: none;  
+    text-align: center;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #773F1A; 
+}
+
+
