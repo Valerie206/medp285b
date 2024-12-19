@@ -1,0 +1,413 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  position:relative;
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom, #0c1445, #1b264f);
+  color: #fff;
+  min-height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
+.container {
+  display: grid;
+  grid-template-rows: auto 1fr;
+  gap: 20px;
+  min-height: 100vh;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .content {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+}
+
+
+nav{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background:#1b264f ;
+  border-top: 2px solid #c8b6ff;
+  border-bottom: 2px solid #c8b6ff;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  z-index: 100;  
+}
+
+nav a{
+  font-size: 20px;
+  color: #f8faff;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+nav a:hover{
+  color:#dcd6f7 ;
+}
+
+/* Stars */
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('images/stardust.png') repeat;
+  opacity: 0.7;
+  animation: twinkle 5s infinite alternate;
+  z-index: -2;
+}
+
+@keyframes twinkle {
+  0% { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+
+/* Clouds */
+.cloud {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  filter: blur(10px);
+  animation: float 20s linear infinite;
+}
+
+.cloud.small {
+  width: 100px;
+  height: 50px;
+}
+
+.cloud.large {
+  width: 200px;
+  height: 100px;
+}
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-20px); }
+  100% { transform: translateY(0); }
+}
+
+
+/*Book*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 60px);
+}
+
+.book {
+  position: relative;
+  display: block;
+  width: 400px;
+  height: 550px;
+  margin: 5% auto;
+  border-radius: 1px 3px 3px 1px;
+  background: linear-gradient(45deg,  #FFCBA4 0%, #D4A5F7 100%);
+  font-family: "Dancing Script", cursive;
+  text-align: center;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  animation: float-book 6s infinite alternate;
+  opacity: 0.9 ;
+  }
+
+   @keyframes float-book {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+.cover {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ background: linear-gradient(45deg, #1b1f38 0%, #1b1f38 100%);
+ text-align: center;
+  transform: rotateY(0deg);
+  transition: transform 0.5s;
+  opacity: ;
+}
+
+..front:after {
+  content: '';
+  position: absolute;
+  top: 1px;
+  bottom: 1px;
+  left: -1px;
+  width: 1px;
+}
+
+ .cover:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 10px;
+  bottom: 0;
+  width: 3px;
+  background: rgba(0,0,0,0.1);
+  box-shadow: 1px 0 3px rgba(255, 255, 255, 0.1);
+}
+
+
+
+.title{
+  font-size: 60px;
+  text-shadow: 0 0 10px #FFD580, 0 0 20px #BBC6CC;
+}
+
+
+.author{
+ font-family: "Cormorant Garamond", serif;
+      font-size: 18px;
+      position: absolute;
+      bottom: 30px;
+      opacity: 0.8;
+  }
+
+.container button {
+ position: absolute;
+      bottom: 90px;
+      background-color: #1b264f;
+      color: #FFF;
+      border: 2px solid #C0C0C0; 
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-family: "Dancing Script", cursive;
+      font-size: 30px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+}
+
+.container button a {
+  text-decoration: none; 
+  color: inherit; 
+}
+
+.container button:hover {
+  background-color: #B8860B; /* Dark gold */
+  color: #231942; /* Deep charcoal for contrast */
+  transform: translateY(-3px); /* Slight lift effect */
+  box-shadow: 0 4px 10px rgba(184, 134, 11, 0.5); /* Dark gold glow effect */
+}
+
+body {
+  margin: 0;
+  font-family: "Dancing Script", cursive;
+  background: linear-gradient(to bottom, #0c1445, #1b264f);
+  color: #fff;
+  overflow: hidden;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; /* Place behind the main content */
+}
+
+/* Dream Entry and Log Styles */
+.dream-entry,
+.dream-log {
+  max-width: 400px;
+  width: 100%;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); 
+  animation: shimmer 3s infinite alternate;
+}
+
+.dream-entry {
+  background: #e8f0fe; 
+  border: 2px solid #e7d9f9; 
+  color: #787c82; 
+}
+
+.dream-log {
+  background: linear-gradient(145deg, #fde9f4, #e7d9f9); 
+  color: #787c82; 
+  border: 2px solid #fff8cc; 
+}
+
+.dream-log p {
+  margin: 10px 0;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #787c82; 
+}
+
+/* Buttons and Textarea */
+textarea {
+  width: 100%;
+  height: 100px;
+  border: 2px solid #e7d9f9;
+  border-radius: 8px;
+  padding: 10px;
+  font-family: "Dancing Script", cursive;
+  font-size: 16px;
+  background-color: #ffffff; 
+  color: #787c82; 
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-family: "Dancing Script", cursive;
+  font-size: 18px;
+  background-color: #fff8cc; 
+  border: 2px solid #fde9f4; 
+  border-radius: 8px;
+  cursor: pointer;
+  color: #787c82; /* Soft gray */
+  transition: background-color 0.3s, transform 0.3s;
+  box-shadow: 0 4px 10px rgba(255, 248, 204, 0.4); 
+}
+
+button:hover {
+  background-color: #e7d9f9; /* Stardust purple */
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(231, 217, 249, 0.6); 
+}
+
+.dream-log {
+  max-height: 300px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  scrollbar-color: #e7d9f9 #fde9f4; 
+}
+
+/* Shimmer Animation */
+@keyframes shimmer {
+  0% { box-shadow: 0 0 5px rgba(255, 248, 204, 0.4); }
+  50% { box-shadow: 0 0 10px rgba(255, 248, 204, 0.6); }
+  100% { box-shadow: 0 0 5px rgba(255, 248, 204, 0.4); }
+}
+
+
+
+header {
+  text-align: center;
+  background-color: #1b264f;
+  padding: 20px;
+  font-size: 2rem;
+  color: #fdfdfd;
+}
+
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 20px;
+  background-color: ;
+  color: #fdfdfd ;
+}
+
+aside {
+  background: #c4c5ff;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0.2);
+  max-width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  color: #231942;
+}
+
+
+/* Table Container */
+table {
+  width: 100%;
+  border-collapse: collapse; 
+  margin: 20px 0;
+  border-radius: 15px; 
+  overflow: hidden; 
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); 
+  background: rgba(173, 216, 230, 0.2); 
+  backdrop-filter: blur(12px); 
+  color: #e6f7ff; 
+  font-family: "Cormorant Garamond", serif; 
+}
+
+/* Table Header */
+th {
+  background-color: rgba(100, 149, 237, 0.6); 
+  color: #f8faff; 
+  font-size: 22px;
+  font-weight: bold;
+  padding: 20px; 
+  text-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); 
+  border-bottom: 2px solid rgba(255, 255, 255, 0.3); 
+}
+
+/* Table Rows */
+tr:nth-child(odd) {
+  background-color: rgba(135, 206, 250, 0.1); 
+}
+
+tr:nth-child(even) {
+  background-color: rgba(176, 224, 230, 0.1); 
+}
+
+/* Hover Effect */
+tr:hover {
+  background-color: rgba(70, 130, 180, 0.4); 
+  color: #f8faff; 
+  transition: all 0.3s ease-in-out; 
+}
+
+/* Table Cells */
+td {
+  padding: 20px; 
+  text-align: center; 
+  font-size: 18px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2); 
+}
+
+/* Highlight Dream Symbols */
+td:first-child {
+  font-weight: bold;
+  color: #b0e0e6; 
+  text-shadow: 0 1px 3px rgba(173, 216, 230, 0.7); 
+}
+
+
+main.text {
+  font-family: "Cormorant Garamond", serif; 
+  color: #fdfdfd;
+}
+.cloud {
+    position: absolute;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0.8;
+    filter: blur(4px);
+    animation: float 10s infinite alternate;
+}
+
+
